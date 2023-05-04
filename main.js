@@ -136,7 +136,7 @@ this.addEventListener("scroll",function(){
     if(this.scrollY>=900){
         upBtn.style.cssText=`right:3%`
     }else if(this.scrollY<=900){
-        upBtn.style.cssText=`right:-3%`
+        upBtn.style.cssText=`right:-100%`
     } 
     
 })

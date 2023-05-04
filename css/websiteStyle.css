@@ -118,16 +118,17 @@ body{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+@media (max-width:500px) {
+    .scrollBox{
+        display: none;
+    }
+}
 /* end scroll bar */
-
-/* ::-webkit-scrollbar-button{
-    background-color: yellow;
-} */
 
 /* start up btton */
 .up{
     position: absolute;
-    right:-8%;
+    right:-100%;
     bottom:10%;
     padding:10px;
     border:none;
@@ -149,6 +150,7 @@ body{
     z-index: 300;
     box-shadow: -1px -1px 9px 0px rgba(250, 250, 250, 0.969);
 }
+
 .up:hover{
     background-color: transparent;
     color:var(--main-color);
@@ -158,7 +160,7 @@ body{
 /* end up btton */
 
 .cnotainer{
-  min-height:100vh;
+    min-height:100vh;
 }
 .cnotainer  .slider-image{
     z-index: -2;
@@ -282,6 +284,7 @@ text-decoration: none;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+
 @media (max-width:1039px) {
     .nav-bar .main-list i{
         display: block;
@@ -368,7 +371,10 @@ display: none !important;
 }
 @media (max-width:500px) {
     .cnotainer .landing-page .text {
-            max-width: 200px;
+            margin-top:160px;
+            max-width: 150px;
+            height: 290px;
+            overflow: hidden;
         }
         .cnotainer .landing-page .text h1 {
             padding: 6px;
@@ -377,6 +383,7 @@ display: none !important;
         }
         .cnotainer .landing-page .text p{
             line-height: 1;
+            
         }
 } 
  /* start setting */
@@ -552,6 +559,7 @@ margin-top:10%;
     position: absolute;
     right:5%;
 }
+
 .cnotainer .setting .stopBtn button:hover{
     background-color: red;
 }
@@ -561,7 +569,12 @@ margin-top:10%;
     display: none;
     right: 15%;
 }
-
+@media (max-width: 575.98px) {
+    .cnotainer .setting .stopBtn button,
+        .cnotainer .setting .startBtn button{
+            display: none;
+        }
+}
 .cnotainer .setting .startBtn button:hover{
     background-color: green;
 }
@@ -1174,7 +1187,7 @@ padding-bottom: 10px;
 }
 
 @media (max-width:786px) {
-       
+
     .my-features .contaienr .features {
         display: flex;
         flex-direction: column;
@@ -1352,7 +1365,7 @@ line-height: 1.5;
     }
     .contact-us .contaienr .box-contact .inputs-contact,
     .contact-us .contaienr .box-contact .text-btn-contact{
-       width: 100%;
+    width: 100%;
     }
 }
 .contact-us .contaienr .box-contact .text-btn-contact button,
