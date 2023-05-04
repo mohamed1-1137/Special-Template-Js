@@ -604,6 +604,7 @@ margin-top:10%;
 
     .cnotainer .setting .colors {
         flex-direction: column;
+        margin-top: -10px;
     }
 
     .colors-title {
